@@ -6,7 +6,6 @@ from keras.callbacks import ModelCheckpoint
 from sklearn.metrics import roc_auc_score
 import tensorflow as tf
 from keras.callbacks import Callback
-from sklearn.model_selection import train_test_split
 from keras.layers import (Conv3D, BatchNormalization, AveragePooling3D, concatenate, Lambda,Activation, Input, GlobalAvgPool3D, Dense)
 from keras.regularizers import l2 as l2l
 from keras.models import Model
