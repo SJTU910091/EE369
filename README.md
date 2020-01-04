@@ -2,7 +2,7 @@ Run "test.py" to test the model and get "submission.csv".
 
 "train.py" is for trainning the model.
 
-"dataset" folder is the path for you to place the data, and you need to place the data by yourself.
+"dataset" folder is the path for you to place the data, and you need to place the folder and data by yourself.
 
 "10.h5" is the model obtained from trainning (1-9.h5 file have been deleted).
 
