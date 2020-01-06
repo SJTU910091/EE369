@@ -5,7 +5,7 @@ from keras.utils import to_categorical
 from keras.callbacks import ModelCheckpoint
 import tensorflow as tf
 from keras.callbacks import Callback
-from keras.layers import (Conv3D, BatchNormalization, AveragePooling3D, concatenate, Lambda,Activation, Input, GlobalAvgPool3D, Dense)
+from keras.layers import (Lambda, AveragePooling3D, Conv3D, BatchNormalization, concatenate, Input, GlobalAvgPool3D, Activation, Dense)
 from keras.regularizers import l2 as l2l
 from keras.models import Model
 config = tf.ConfigProto()
