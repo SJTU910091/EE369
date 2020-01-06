@@ -92,7 +92,7 @@ def get_compiled(loss='categorical_crossentropy', optimizer='adam',metrics=["cat
 model = get_compiled()
 model.load_weights(model_path)
 testb = model.predict(xtest, 32, verbose=1)
-col = np.loadtxt("Result.csv", str, delimiter=",", skiprows=1, usecols=0)
+d4d = np.loadtxt("Result.csv", str, delimiter=",", skiprows=1, usecols=0)
 path = "submission.csv"
-np.savetxt(path, np.column_stack((col,1-(testb[:, 1]))), delimiter=',', fmt='%s', header='Id,Predicted', comments='')
+np.savetxt(path, np.column_stack((d4d,1-(testb[:, 1]))), delimiter=',', fmt='%s', header='Id,Predicted', comments='')
 print('finish')
